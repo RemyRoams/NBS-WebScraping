@@ -14,7 +14,7 @@ for i in range(1,25):
    for book in books:
       book_name = book.find('h2', {'class':"h3 product-title"}).text
 
-      book_price = book.find('span', class_ = "price").text
+      book_price = book.find('span', {"class":"price"}).text
       book_price = book_price.replace(' ', "")
       book_price = book_price.replace(',', "")
       book_price = book_price[1:-2]
